@@ -21,11 +21,12 @@ class FindLeast {
 		int newLength;
 		if (array.length > MAX_ARRAY_LENGTH) {
 			newLength = array.length/2;
-
 			arrayPart1 = fillArray(array, newLength, 0);
 			// the length of this array is set the old length - the new length
 			// to get all numbers if the length of the old array were uneven.
 			arrayPart2 = fillArray(array, array.length - newLength, newLength);
+			findLeast(arrayPart1);
+			findLeast(arrayPart2);
 			System.out.println("First array: " + arrayPart1.length);
 			System.out.println("Second array: " + arrayPart2.length);
 

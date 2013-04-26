@@ -5,6 +5,12 @@ class Main {
 	long time;
 	public Main() {
 		initialSetup();
+		System.out.println("The current time in milliseconds before we start"
+			+ " to devide the array: ");
+		System.out.println(time = System.currentTimeMillis());
+		System.out.println("Milliseconds after we have devided all the"
+			+ " arrays");
+		System.out.println(System.currentTimeMillis() - time);
 		new FindLeast (tall);
 	}
 	public static void main (String [] args) {
