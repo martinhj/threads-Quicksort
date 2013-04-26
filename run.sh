@@ -1,3 +1,3 @@
 #!/bin/sh
 
-java -mx1g Main 
+java -mx2g Main 
