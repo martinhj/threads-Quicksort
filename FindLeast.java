@@ -1,5 +1,6 @@
 class FindLeast <K extends Comparable> {
 	//private K [] array;
+	final static int MAX_ARRAY_LENGTH = 100;
 	FindLeast(K [] array) {
 		//this.array = array;
 		findLeast(array);//(this.array);
@@ -9,7 +10,26 @@ class FindLeast <K extends Comparable> {
 		System.out.println(n);
 
 	}
-	K findLeast(K [] array) {
+	private K findLeast(K [] array) {
+		K [] arrayPart1;
+		K [] arrayPart2;
+		int newLength;
+		if (array.length > MAX_ARRAY_LENGTH) {
+			newLength = array.length/2;
+
+			arrayPart1 = fillArray(array, newLength, 0);
+			// the length of this array is set the old length - the new length
+			// to get all numbers if the length of the old array were uneven.
+			arrayPart2 = fillArray(array, array.length - newLength, newLength);
+
+		}
 		return null;
+	}
+	private K[] fillArray(K [] oldArray, int length, int start) {
+		Object [] newArray = new Object [length];
+		for (int i = start; i < length; i++)
+			newArray[i] = oldArray[start + i];
+		return (K []) newArray;
+
 	}
 }
