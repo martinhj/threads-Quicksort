@@ -4,8 +4,6 @@ class FindLeast {
 	FindLeast(int [] array) {
 		//this.array = array;
 		findLeast(array);//(this.array);
-		int n = array[0];
-		int m = array[0];
 	}
 	private int findLeast(int [] array) {
 		int [] arrayPart1;
@@ -22,12 +20,12 @@ class FindLeast {
 			//System.out.println("First array: " + arrayPart1.length);
 			//System.out.println("Second array: " + arrayPart2.length);
 		}
-		/*if array.length <= MAX_ARRAY_LENGTH) {
+		if (array.length <= MAX_ARRAY_LENGTH) {
 
 			for (int i = 0; i < array.length; i++) {
 
 			}
-		}*/
+		}
 		return -1;
 	}
 	private int [] fillArray(int [] oldArray, int length, int start) {

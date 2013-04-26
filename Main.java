@@ -12,6 +12,13 @@ class Main {
 		System.out.println("Milliseconds after we have devided all the"
 			+ " arrays");
 		System.out.println(System.currentTimeMillis() - time);
+		System.out.println("The current time in milliseconds before we start"
+			+ " to find the least number linear: ");
+		System.out.println(time = System.currentTimeMillis());
+		new FindLeastLinear(tall);
+		System.out.println("Milliseconds after we have found the least" 
+			+ " number");
+		System.out.println(System.currentTimeMillis() - time);
 		
 	}
 	public static void main (String [] args) {
