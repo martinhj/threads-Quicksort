@@ -6,14 +6,6 @@ class FindLeast {
 		findLeast(array);//(this.array);
 		int n = array[0];
 		int m = array[0];
-		// Linear least
-		for (int i = 1; i < array.length; i++) {
-			if (n > array[i]) n = array[i];
-			if (m < array[i]) m = array[i];
-		}
-		System.out.println("Linear least: " + n);
-		System.out.println("Linear last: " + m);
-
 	}
 	private int findLeast(int [] array) {
 		int [] arrayPart1;
@@ -27,19 +19,24 @@ class FindLeast {
 			arrayPart2 = fillArray(array, array.length - newLength, newLength);
 			findLeast(arrayPart1);
 			findLeast(arrayPart2);
-			System.out.println("First array: " + arrayPart1.length);
-			System.out.println("Second array: " + arrayPart2.length);
-
+			//System.out.println("First array: " + arrayPart1.length);
+			//System.out.println("Second array: " + arrayPart2.length);
 		}
+		/*if array.length <= MAX_ARRAY_LENGTH) {
+
+			for (int i = 0; i < array.length; i++) {
+
+			}
+		}*/
 		return -1;
 	}
 	private int [] fillArray(int [] oldArray, int length, int start) {
-		System.out.println("The old array's size: " + oldArray.length);
-		System.out.println("Point to start: " + start);
+		//System.out.println("The old array's size: " + oldArray.length);
+		//System.out.println("Point to start: " + start);
 		int [] newArray = new int[length];
 		for (int i = start; i < length; i++)
 			newArray[i] = oldArray[start + i];
-		System.out.println("The new array's size: " + newArray.length);
+		//System.out.println("The new array's size: " + newArray.length);
 		return newArray;
 
 	}
