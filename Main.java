@@ -1,11 +1,11 @@
 class Main {
 	final int DEVIDE_BY = 64;
 	// Array to be sorted.
-	Integer tall [] = new Integer [Integer.MAX_VALUE / DEVIDE_BY];
+	int tall [] = new int [Integer.MAX_VALUE / DEVIDE_BY];
 	long time;
 	public Main() {
 		initialSetup();
-		new FindLeast<Integer>(tall);
+		new FindLeast (tall);
 	}
 	public static void main (String [] args) {
 		new Main();
