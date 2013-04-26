@@ -6,11 +6,11 @@ class Main {
 	public Main() {
 		initialSetup();
 		System.out.println("The current time in milliseconds before we start"
-			+ " to devide the array: ");
+			+ " to find the least number in the array recursively: ");
 		System.out.println(time = System.currentTimeMillis());
 		new FindLeast (tall);
-		System.out.println("Milliseconds after we have devided all the"
-			+ " arrays");
+		System.out.println("Milliseconds after we found the least number in"
+			+ " the array");
 		System.out.println(System.currentTimeMillis() - time);
 		System.out.println("The current time in milliseconds before we start"
 			+ " to find the least number linear: ");

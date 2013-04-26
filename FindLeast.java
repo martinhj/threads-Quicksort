@@ -26,8 +26,10 @@ class FindLeast {
 			//System.out.println("### " + leastInFirstArray + " # # # " + leastInSecondArray + " ###");
 			//System.out.println("First array: " + arrayPart1.length);
 			//System.out.println("Second array: " + arrayPart2.length);
-			if (leastInSecondArray <= leastInFirstArray) return leastInSecondArray;
-			if (leastInFirstArray < leastInSecondArray) return leastInFirstArray;
+			if (leastInSecondArray <= leastInFirstArray) 
+				return leastInSecondArray;
+			if (leastInFirstArray < leastInSecondArray) 
+				return leastInFirstArray;
 		}
 		if (array.length <= MAX_ARRAY_LENGTH) {
 			int n = array[0];
