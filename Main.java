@@ -1,5 +1,5 @@
 class Main {
-	final int DEVIDE_BY = 64;
+	final int DEVIDE_BY =  16;
 	// Array to be sorted.
 	int tall [] = new int [Integer.MAX_VALUE / DEVIDE_BY];
 	long time;
@@ -8,6 +8,7 @@ class Main {
 		System.out.println("The current time in milliseconds before we start"
 			+ " to find the least number in the array recursively: ");
 		System.out.println(time = System.currentTimeMillis());
+		// Her finner jeg det minste tallet i arrayet rekursivt.
 		new FindLeast (tall);
 		System.out.println("Milliseconds after we found the least number in"
 			+ " the array");
@@ -15,11 +16,11 @@ class Main {
 		System.out.println("The current time in milliseconds before we start"
 			+ " to find the least number linear: ");
 		System.out.println(time = System.currentTimeMillis());
+		// Her finner jeg det minste tallet i arrayet lineært.
 		new FindLeastLinear(tall);
 		System.out.println("Milliseconds after we have found the least" 
 			+ " number");
 		System.out.println(System.currentTimeMillis() - time);
-		
 	}
 	public static void main (String [] args) {
 		new Main();
