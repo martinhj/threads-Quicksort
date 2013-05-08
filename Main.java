@@ -23,6 +23,7 @@ class Main {
 		System.out.println(System.currentTimeMillis() - time);
 	}
 	public static void main (String [] args) {
+        System.out.println(Runtime.getRuntime().availableProcessors());
 		new Main();
 	}
 	void initialSetup() {
